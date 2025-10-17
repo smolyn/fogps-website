@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advocacy - Friends of Garibaldi Park Society</title>
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="stylesheet" href="/fogps.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <a href="/" class="logo-link">
+                    <img src="/img/logo.png" alt="Friends of Garibaldi Park Society" class="logo">
+                </a>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav>
+                    <a href="/about/">About</a>
+                    <a href="/trail-maintenance/">Trail Maintenance</a>
+                    <a href="/advocacy/">Advocacy</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            
+<section class="content-section">
+    <h1>Advocacy</h1>
+
+    <div class="section-block">
+        <h2>What We Do</h2>
+        <p>The Friends of Garibaldi Park Society's Advocacy Committee champions the interests of park users by identifying and addressing issues that affect access to and use of Garibaldi Provincial Park. We work collaboratively with BC Parks, local communities, and stakeholders to raise awareness of critical topics, define positive outcomes, and take action to achieve meaningful change.</p>
+        <p>Our advocacy efforts ensure that the voices of park users are heard in decision-making processes, helping to shape policies and initiatives that balance conservation with sustainable public access to this spectacular wilderness.</p>
+    </div>
+
+    <div class="section-block">
+        <h2>Current Projects</h2>
+        <div class="advocacy-projects">
+            <div class="advocacy-item">
+                <h3>BC Parks Day-Use Passes</h3>
+                <div class="advocacy-description">
+                    <p>[Project description to be added]</p>
+                </div>
+            </div>
+            <div class="advocacy-item">
+                <h3>Garibaldi at Squamish</h3>
+                <div class="advocacy-description">
+                    <p>[Project description to be added]</p>
+                </div>
+            </div>
+            <div class="advocacy-item">
+                <h3>BC Parks Day Use Pass Pilot Project</h3>
+                <div class="advocacy-description">
+                    <p>[Project description to be added]</p>
+                </div>
+            </div>
+            <div class="advocacy-item">
+                <h3>South West Garibaldi Park Amendment Proposal</h3>
+                <div class="advocacy-description">
+                    <p>[Project description to be added]</p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <h2>Completed Projects</h2>
+        <div class="advocacy-projects">
+             <div class="advocacy-item">
+                <h3>Rubble Creek Winter Access</h3>
+                <div class="advocacy-description">
+                    <p>[Project description to be added]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <footer>
+            <section class="get-involved">
+                <div class="get-involved-content">
+                    <h2>Ready to get involved?</h2>
+                    <a href="mailto:hello@friendsofgaribaldipark.org" class="btn-contact">Contact Us</a>
+                </div>
+                <img src="/img/lesleyderksen-bship.jpg" alt="Volunteer working on trail">
+            </section>
+
+            <section class="land-acknowledgement">
+                <p>We operate on the traditional, ancestral and unceded territories of the Skwxwú7mesh-ulh Temíx̱w (Squamish), səl̓ilwətaɁɬ təməxʷ (Tsleil-Waututh), sq̓əc̓iy̓aɁɬ təməxʷ (Katzie), Lil'wat, and St'at'mic Nations.</p>
+            </section>
+
+            <section class="social-links">
+                <a href="https://www.instagram.com/friendsofgaribaldiparksociety/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <img src="/img/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/FriendsofGaribaldiParkSociety" target="_blank" rel="noopener" aria-label="Facebook">
+                    <img src="/img/facebook.svg" alt="Facebook">
+                </a>
+                <a href="mailto:hello@friendsofgaribaldipark.org" aria-label="Email">
+                    <img src="/img/email.svg" alt="Email">
+                </a>
+            </section>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // Close menu when clicking a nav link
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    nav.classList.remove('active');
+                });
+            });
+        </script>
+    </body>
+</html>
